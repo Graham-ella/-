@@ -4,17 +4,17 @@ using namespace std;
 
 int main() {
 	//前序遍历创建树
-	Btree TreeOne = preCreateBT();
+	cout << "利用前序遍历创建二叉树:" << endl;
+	Btree TreeOne = preCreateBT();//创建二叉树
 
-	/*
-	int rs = Height(TreeOne);
+	int rs = Height(TreeOne);//求二叉树的高度
 	cout<<"二叉树的高度为："<<rs << endl;
 
 	cout << "该树的所有叶子结点为：";
-	preOrderPrint(TreeOne);
+	preOrderPrint(TreeOne);//求二叉树的所有叶子节点
 	cout << endl;
 
-	
+
 	cout << "该树的前序遍历（递归）为：";
 	PreOrder(TreeOne);
 	cout << endl;
@@ -45,7 +45,7 @@ int main() {
 	bool result = ifCompleteTree(TreeOne);
 	cout << result;
 
-	*/
+
 
 	vector<datatype> v1;
 	Btree tempone = findNodeByData(TreeOne, 'H');

@@ -189,9 +189,9 @@ bool ifCompleteTree(Btree T) {
 	int flag = 0;//标记变量，如果flag=0，证明之前没有遇到过叶子节点，flag=1，之前已经遇到过叶子节点
 	int flagtwo = 0;//遇到先只有左孩子的情况
 	if (T == NULL) {
-		return false;
+		return false;// 如果树为空，直接返回false
 	}
-	Q.push(T);
+	Q.push(T);//树不为空，结点入队
 	
 	while (!Q.empty()) {
 		//层序遍历
